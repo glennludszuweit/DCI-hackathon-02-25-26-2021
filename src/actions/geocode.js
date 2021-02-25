@@ -1,14 +1,13 @@
 import * as api from '../api';
 
-const Geocode = {
+const geocode = {
   getMapGeocode: (city) => async (dispatch) => {
     try {
-      const res = await api.getMapGeocode(city);
-      console.log(res);
+      const { data } = await api.getMapGeocode(city);
+      const location = data.results[0].locations[0];
       dispatch({
         type: 'GET_GEOCODE',
-        lat: '',
-        lon: '',
+        geocodeData: location,
       });
     } catch (error) {
       console.log(error.message);
@@ -16,4 +15,4 @@ const Geocode = {
   },
 };
 
-export default Geocode;
+export default geocode;

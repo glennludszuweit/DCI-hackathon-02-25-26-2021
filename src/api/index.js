@@ -8,7 +8,7 @@ export const getMapGeocode = (city) =>
     `http://open.mapquestapi.com/geocoding/v1/address?key=${mapApiKey}&inFormat=kvp&outFormat=json&&thumbMaps=false&maxResult=1&location=${city}`
   );
 
-export const getAirPollutionData = (lat, lon) =>
+export const getAirPollutionData = (lat, lng) =>
   axios.get(
-    `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${airPollutionApiKey}`
+    `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lng}&appid=${airPollutionApiKey}`
   );

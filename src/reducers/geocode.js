@@ -1,11 +1,8 @@
-const defaultState = { lat: '', lon: '' };
+const defaultState = {};
 const geocode = (state = defaultState, action) => {
   switch (action.type) {
     case 'GET_GEOCODE':
-      return {
-        lat: action.lat,
-        lon: action.lon,
-      };
+      return action.geocodeData;
 
     default:
       return state;
