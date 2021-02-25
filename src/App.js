@@ -8,16 +8,14 @@ function App() {
   const dispatch = useDispatch();
   const geocodeData = useSelector((state) => state.geocode);
   const airData = useSelector((state) => state.air);
-
   const [city, setCity] = useState('Dusseldorf');
 
-  console.log(geocodeData);
+  const latitude = async () => await geocodeData.latLng.lat;
+  const longitude = async () => await geocodeData.latLng.lng;
 
-  useEffect(() => {
+  useEffect(async () => {
     dispatch(geocode.getMapGeocode(city));
-    dispatch(
-      air.getAirPollutionData(geocodeData.latLng.lat, geocodeData.latLng.lng)
-    );
+    dispatch(air.getAirPollutionData(await latitude(), await longitude()));
   }, [dispatch, city]);
 
   return (

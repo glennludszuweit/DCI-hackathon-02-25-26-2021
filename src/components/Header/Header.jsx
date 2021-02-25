@@ -1,22 +1,17 @@
-import { HeaderContainer } from './styles';
+import { HeaderContainer, HeaderContent, Content, Search } from './styles';
 
 function Header({ geocodeData, airData, city, setCity }) {
   return (
-    <div style={{}}>
-      <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-        }}
-      >
-        <div>
-          <input type='search' onChange={(e) => setCity(e.target.value)} />
+    <HeaderContainer>
+      <HeaderContent>
+        <Content>
+          <Search type='search' onChange={(e) => setCity(e.target.value)} />
           <h1>{city.toUpperCase()}</h1>
           <h2>
             {geocodeData.adminArea3}, {geocodeData.adminArea1}
           </h2>
-        </div>
-        <div>
+        </Content>
+        <Content>
           <h1>Air Pollution Rate</h1>
           <ul>
             <li>{airData.co}</li>
@@ -28,9 +23,9 @@ function Header({ geocodeData, airData, city, setCity }) {
             <li>{airData.no2}</li>
           </ul>
           <p></p>
-        </div>
-      </div>
-    </div>
+        </Content>
+      </HeaderContent>
+    </HeaderContainer>
   );
 }
 
