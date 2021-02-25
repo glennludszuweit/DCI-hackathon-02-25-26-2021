@@ -1,7 +1,7 @@
 import { HeaderContainer, HeaderContent, Content, Search } from './styles';
 
 function Header({ geocodeData, airData, city, setCity }) {
-  return (
+  return geocodeData ? (
     <HeaderContainer>
       <HeaderContent>
         <Content>
@@ -26,6 +26,8 @@ function Header({ geocodeData, airData, city, setCity }) {
         </Content>
       </HeaderContent>
     </HeaderContainer>
+  ) : (
+    <h1>Loading</h1>
   );
 }
 

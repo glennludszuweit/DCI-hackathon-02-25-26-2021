@@ -8,6 +8,8 @@ const geocode = {
       dispatch({
         type: 'GET_GEOCODE',
         geocodeData: location,
+        latitude: location.latLng.lat,
+        longitude: location.latLng.lng,
       });
     } catch (error) {
       console.log(error.message);

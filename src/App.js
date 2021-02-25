@@ -6,17 +6,16 @@ import Header from './components/Header/Header';
 
 function App() {
   const dispatch = useDispatch();
-  const geocodeData = useSelector((state) => state.geocode);
+  const geocodeData = useSelector((state) => state.geocode.geocodeData);
+  const latitude = useSelector((state) => state.geocode.latitude);
+  const longitude = useSelector((state) => state.geocode.longitude);
   const airData = useSelector((state) => state.air);
   const [city, setCity] = useState('Dusseldorf');
 
-  const latitude = async () => await geocodeData.latLng.lat;
-  const longitude = async () => await geocodeData.latLng.lng;
-
-  useEffect(async () => {
+  useEffect(() => {
     dispatch(geocode.getMapGeocode(city));
-    dispatch(air.getAirPollutionData(await latitude(), await longitude()));
-  }, [dispatch, city]);
+    dispatch(air.getAirPollutionData(latitude, longitude));
+  }, [dispatch, city, latitude, longitude]);
 
   return (
     <>
