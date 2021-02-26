@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.js": "/DCI-hackathon-02-25-26-2021/static/js/main.ffdffd98.chunk.js",
+    "main.js.map": "/DCI-hackathon-02-25-26-2021/static/js/main.ffdffd98.chunk.js.map",
+    "runtime-main.js": "/DCI-hackathon-02-25-26-2021/static/js/runtime-main.15c41f96.js",
+    "runtime-main.js.map": "/DCI-hackathon-02-25-26-2021/static/js/runtime-main.15c41f96.js.map",
+    "static/css/2.373bc5f8.chunk.css": "/DCI-hackathon-02-25-26-2021/static/css/2.373bc5f8.chunk.css",
+    "static/js/2.04187c4e.chunk.js": "/DCI-hackathon-02-25-26-2021/static/js/2.04187c4e.chunk.js",
+    "static/js/2.04187c4e.chunk.js.map": "/DCI-hackathon-02-25-26-2021/static/js/2.04187c4e.chunk.js.map",
+    "index.html": "/DCI-hackathon-02-25-26-2021/index.html",
+    "static/css/2.373bc5f8.chunk.css.map": "/DCI-hackathon-02-25-26-2021/static/css/2.373bc5f8.chunk.css.map",
+    "static/js/2.04187c4e.chunk.js.LICENSE.txt": "/DCI-hackathon-02-25-26-2021/static/js/2.04187c4e.chunk.js.LICENSE.txt",
+    "static/media/bad.f417fa4f.jpg": "/DCI-hackathon-02-25-26-2021/static/media/bad.f417fa4f.jpg",
+    "static/media/good.b272ae3b.jpg": "/DCI-hackathon-02-25-26-2021/static/media/good.b272ae3b.jpg",
+    "static/media/logo.18a04e0e.png": "/DCI-hackathon-02-25-26-2021/static/media/logo.18a04e0e.png",
+    "static/media/moderate.efc26a11.jpg": "/DCI-hackathon-02-25-26-2021/static/media/moderate.efc26a11.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.15c41f96.js",
+    "static/css/2.373bc5f8.chunk.css",
+    "static/js/2.04187c4e.chunk.js",
+    "static/js/main.ffdffd98.chunk.js"
+  ]
+}
