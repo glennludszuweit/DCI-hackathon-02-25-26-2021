@@ -8,8 +8,20 @@ function Footer() {
       <Social>
         <p>Green Orb St. 88 62382 Berlin, Germany</p>
         <p>admin@greenorb.org</p>
-        <FaInstagram size={25} style={{ marginRight: '1rem' }} />
-        <FaFacebookSquare size={25} style={{ marginRight: '1rem' }} />
+        <a
+          href='https://www.instagram.com/greenorb.community/'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <FaInstagram size={25} style={{ marginRight: '1rem' }} />
+        </a>
+        <a
+          href='https://www.facebook.com/Green-Orb-105292428281088'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <FaFacebookSquare size={25} style={{ marginRight: '1rem' }} />
+        </a>
         <FaLinkedin size={25} style={{ margin: '1rem 1rem 0 0' }} />
       </Social>
 

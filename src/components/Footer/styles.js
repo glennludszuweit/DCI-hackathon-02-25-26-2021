@@ -26,4 +26,9 @@ export const Social = styled.div`
   & p {
     font-size: 1.5rem;
   }
+
+  & a {
+    text-decoration: none;
+    color: #fff;
+  }
 `;
