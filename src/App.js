@@ -5,7 +5,6 @@ import Body from './components/Body/Body';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
-import { GlobalStyle } from './styles';
 import Loading from './components/Loading/Loading';
 
 function App() {
@@ -26,7 +25,6 @@ function App() {
 
   return geocodeData && airData ? (
     <>
-      <GlobalStyle />
       <Header
         geocodeData={geocodeData}
         airData={airData}
