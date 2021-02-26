@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/DCI-hackathon-02-25-26-2021/static/js/main.ffdffd98.chunk.js",
-    "main.js.map": "/DCI-hackathon-02-25-26-2021/static/js/main.ffdffd98.chunk.js.map",
+    "main.js": "/DCI-hackathon-02-25-26-2021/static/js/main.5d3dcc7c.chunk.js",
+    "main.js.map": "/DCI-hackathon-02-25-26-2021/static/js/main.5d3dcc7c.chunk.js.map",
     "runtime-main.js": "/DCI-hackathon-02-25-26-2021/static/js/runtime-main.15c41f96.js",
     "runtime-main.js.map": "/DCI-hackathon-02-25-26-2021/static/js/runtime-main.15c41f96.js.map",
     "static/css/2.373bc5f8.chunk.css": "/DCI-hackathon-02-25-26-2021/static/css/2.373bc5f8.chunk.css",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.15c41f96.js",
     "static/css/2.373bc5f8.chunk.css",
     "static/js/2.04187c4e.chunk.js",
-    "static/js/main.ffdffd98.chunk.js"
+    "static/js/main.5d3dcc7c.chunk.js"
   ]
 }
