@@ -11,4 +11,5 @@ export const getMapGeocode = (city) =>
 export const getAirPollutionData = (lat, lng) =>
   axios.get(
     `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lng}&appid=${airPollutionApiKey}`
+    // `http://api.airvisual.com/v2/city?city=${city}&state=California&country=USA&key=82f594ef-fc70-4e3f-963f-4d55e2c6f919`
   );
