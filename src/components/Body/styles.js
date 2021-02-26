@@ -28,7 +28,7 @@ export const CardsContainer = styled.div`
 `;
 
 export const Card = styled.div`
-  height: 30rem;
+  height: 35rem;
   width: 40rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   margin: 1rem;
@@ -57,7 +57,7 @@ export const CardTitle = styled.div`
 `;
 
 export const CardBody = styled.p`
-  font-size: 1.9rem;
+  font-size: 2rem;
   text-align: left;
   padding: 1.5rem;
   display: flex;
